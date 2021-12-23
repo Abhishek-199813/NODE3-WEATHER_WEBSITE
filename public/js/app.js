@@ -21,8 +21,8 @@ weatherForm.addEventListener('submit',(e)=>{
         else{
             messageOne.textContent = data.location
 
-            const { weather, temperature, feelslike} = data.forecast
-            messageTwo.textContent = `${weather} It is ${temperature} degrees Celcius, with a ${feelslike} chance of rain.`;
+            const { weather, temperature, feelslike, humidity, cloudcover} = data.forecast
+            messageTwo.textContent = `${weather} It is ${temperature} degrees Celcius, with a ${feelslike} chance of rain. also humidity is ${humidity} % and cloudcover is ${cloudcover} %`;
           
         }
         })
